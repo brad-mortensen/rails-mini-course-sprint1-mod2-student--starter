@@ -25,7 +25,15 @@ module Lendable
     if @count > 0
       @count -= 1
     else
-      puts "You cant do dat"
+      puts "No remaining copies"
+    end
+  end
+  def return
+    puts "returning..."
+    if @count < 3
+      @count += 1
+    else
+      puts "All books checked in"
     end
   end
 end
