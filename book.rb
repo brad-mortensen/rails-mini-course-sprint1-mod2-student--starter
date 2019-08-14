@@ -21,8 +21,9 @@ end
 
 module Lendable
   def lend
-    if count > 0
-      count -= 1
+    puts "lending..."
+    if @count > 0
+      @count -= 1
     else
       puts "You cant do dat"
     end
